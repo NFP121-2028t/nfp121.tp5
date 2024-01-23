@@ -1,5 +1,23 @@
 #BlueJ class context
 comment0.target=EnsembleTest
 comment1.params=
-comment1.target=void\ testUnion()
-numComments=2
+comment1.target=void\ setUp()
+comment10.params=
+comment10.target=void\ test_allJoins()
+comment2.params=
+comment2.target=void\ test_addElement()
+comment3.params=
+comment3.target=void\ test_addDuplicateElement()
+comment4.params=
+comment4.target=void\ test_addMultipleElements()
+comment5.params=
+comment5.target=void\ test_addAll()
+comment6.params=
+comment6.target=void\ testUnion()
+comment7.params=
+comment7.target=void\ testInter()
+comment8.params=
+comment8.target=void\ testDiff()
+comment9.params=
+comment9.target=void\ testDiffSym()
+numComments=11

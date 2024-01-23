@@ -2,7 +2,8 @@ package question2;
 
 import java.util.List;
 import java.util.Map;
-// à  compléter
+import java.util.LinkedList;
+import java.util.HashMap;
 import java.util.StringTokenizer;
 
 public class Chapitre2CoreJava2 {
@@ -12,12 +13,13 @@ public class Chapitre2CoreJava2 {
      * 
      **/
     public static List<String> listeDesMots() {
-        List<String> liste = null; // à  compléter
-
+        List<String> liste = new LinkedList<>();
         StringTokenizer st = new StringTokenizer(Chapitre2CoreJava2.CHAPITRE2,
-                "[](){};, :.\n\"");
-        // à  compléter
-
+            "[](){};, :.\n\"");
+        while (st.hasMoreTokens()) {
+            String mot = st.nextToken();
+            liste.add(mot);
+        }
         return liste;
     }
 
@@ -28,10 +30,10 @@ public class Chapitre2CoreJava2 {
      * @param liste la liste des mots
      */
     public static Map<String, Integer> occurrencesDesMots(List<String> liste) {
-        Map<String, Integer> table = null; // à  compléter
-        // à  compléter
-        // à  compléter
-        return table;
+        Map<String, Integer> result = new HashMap<>();
+        for (String mot : liste)
+            result.put(mot, result.getOrDefault(mot, 0) + 1);
+        return result;
     }
 
     public static final String CHAPITRE2 =
